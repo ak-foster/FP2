@@ -89,7 +89,7 @@ Compare this syntax to that of a standard function definition:
     def my_sum(x, y):
         return x + y
 
-This simple function does nothing more than return the value of the expression in the ``return``, so the named function is viable when written on a single line.
+This simple function does nothing more than return the value of the expression in the ``return``, so it is viable written on a single line.
 
 .. code-block:: python3
 
