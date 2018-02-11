@@ -64,13 +64,13 @@ Comprehensions
 Lambda
 ======
 
-The Lambda special form is Python's syntax for creating an unnamed function, i.e., a function without a name.  This is its general form:
+The Lambda special form is Python's syntax for creating an unnamed function -- a function without a name.  This is its general form:
 
 .. code-block:: python
 
     lambda arguments: expression
 
-For example, here is a lambda form which adds one to its argument:
+The function evaluates to the result of the expression.  Here is a lambda form that adds one to its argument:
 
 .. code-block:: python3
 
@@ -82,14 +82,33 @@ Here is a lambda that adds its two arguments together:
 
     lambda x, y: x + y
 
+Compare this syntax to that of a standard function definition:
+
+.. code-block:: python3
+
+    def my_sum(x, y):
+        return x + y
+
+This simple function does nothing more than return the value of the expression in the ``return``, so the named function is viable when written on a single line.
+
+.. code-block:: python3
+
+    def my_sum(x, y): return x + y
+
+Notice how this named function maps directly to its unnamed, lambda equivilent:
+
+.. code-block:: python3
+
+    lambda x, y: x + y
+
 Now, unlike most code snippets, if you were to type these examples into your favorite python interpreter by themselves they would not accomplish much.
 
 Ipython:
 
 .. code-block:: ipython3
 
-    In [1]: lambda x, y: x + y
-    Out[1]: <function __main__.<lambda>>
+    In []: lambda x, y: x + y
+    Out[]: <function __main__.<lambda>>
 
 The reference cpython interpreter:
 
@@ -98,8 +117,14 @@ The reference cpython interpreter:
     >>> lambda x, y: x + y
     <function <lambda> at 0x104f61e18>
 
+You can't call those, because they have no name.  For all intents and purposes they were defined, recognized by the python interpreter as valid, syntatically correct python code, and then discarded, never to be seen or used again.  You could use them immediately by passing arguments:
 
+Ipython:
 
+.. code-block:: ipython3
+
+    In []: (lambda x, y: x + y)(2, 3)
+    Out[]: 5
 
 What use is Lambda?
 -------------------
