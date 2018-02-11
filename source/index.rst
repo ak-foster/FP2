@@ -64,7 +64,7 @@ Comprehensions
 Lambda
 ======
 
-The Lambda special form is Python's syntax for creating an unnamed function &amp;mdash; a function without a name.  This is its general form:
+The Lambda special form is Python's syntax for creating an unnamed function u'\u2014' a function without a name.  This is its general form:
 
 .. code-block:: python
 
