@@ -83,12 +83,16 @@ Here is a lambda that adds its two arguments together:
 
     lambda x, y: x + y
 
-Now unlike most code snippets, if you were to type these examples into your favorite python interpreter by themselves they would not accomplish much.
+Now, unlike most code snippets, if you were to type these examples into your favorite python interpreter by themselves they would not accomplish much.
+
+Ipython:
 
 .. code-block:: ipython3
 
     In [1]: lambda x, y: x + y
     Out[1]: <function __main__.<lambda>>
+
+The reference cpython interpreter:
 
 .. code-block:: python3
 
