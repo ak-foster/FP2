@@ -73,24 +73,24 @@ The Lambda special form is Python's syntax for creating an unnamed function, i.e
 
 For example, here is a lambda form which adds one to its argument:
 
-.. .. code-block:: python3
+.. code-block:: python3
 
     lambda x: x + 1
 
 Here is a lambda that adds its two arguments together:
 
-.. .. code-block:: python3
+.. code-block:: python3
 
     lambda x, y: x + y
 
 Now unlike most code snippets, if you were to type these examples into your favorite python interpreter by themselves they would not accomplish much.
 
-.. .. code-block:: ipython3
+.. code-block:: ipython3
 
     In [1]: lambda x, y: x + y
     Out[1]: <function __main__.<lambda>>
 
-.. .. code-block:: python3
+.. code-block:: python3
 
     >>> lambda x, y: x + y
     <function <lambda> at 0x104f61e18>

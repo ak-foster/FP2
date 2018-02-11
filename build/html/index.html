@@ -142,8 +142,22 @@
 </dl>
 <p><a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
 <p>For example, here is a lambda form which adds one to its argument:</p>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
 <p>Here is a lambda that adds its two arguments together:</p>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</pre></div>
+</div>
 <p>Now unlike most code snippets, if you were to type these examples into your favorite python interpreter by themselves they would not accomplish much.</p>
+<div class="highlight-ipython3"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<span class="gh">Out[1]: </span><span class="go">&lt;function __main__.&lt;lambda&gt;&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<span class="go">&lt;function &lt;lambda&gt; at 0x104f61e18&gt;</span>
+</pre></div>
+</div>
 <div class="section" id="what-use-is-lambda">
 <h4>What use is Lambda?<a class="headerlink" href="#what-use-is-lambda" title="Permalink to this headline">¶</a></h4>
 <p>According to Python’s creator, not much.</p>
