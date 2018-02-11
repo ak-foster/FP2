@@ -124,7 +124,9 @@ You can't call those, because they have no name.  For all intents and purposes t
     >>> (lambda x, y: x + y)(2, 3)
     5
 
-But this feels like we're using the python interpreter as little more than a calculator; we are not writing useful code.  Indeed simply entering ``2 + 3`` in the interpreter provides the same result with a lot less typing.
+In this case python defines the anonymous function, calls it with the supplied arguments and prints the result, but this feels like we're using the python interpreter as little more than a calculator; we are not writing useful code.  Indeed simply entering ``2 + 3`` in the interpreter provides the same result with a lot less typing.  So what's the point?  Where are lambdas useful?
+
+Lambdas are only useful within larger code constructs.
 
 
 What use is Lambda?
