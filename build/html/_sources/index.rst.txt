@@ -117,14 +117,15 @@ The reference cpython interpreter:
     >>> lambda x, y: x + y
     <function <lambda> at 0x104f61e18>
 
-You can't call those, because they have no name.  For all intents and purposes they were defined, recognized by the python interpreter as valid, syntatically correct python code, and then discarded, never to be seen or used again.  You could use them immediately by passing arguments:
+You can't call those, because they have no name.  For all intents and purposes the anonymous functions were defined, recognized by the python interpreter as valid, syntatically correct python code, and then discarded, never to be seen or used again.  You could, however, use the function immediately by calling it with its required arguments:
 
-Ipython:
+.. code-block:: python3
 
-.. code-block:: ipython3
+    >>> (lambda x, y: x + y)(2, 3)
+    5
 
-    In []: (lambda x, y: x + y)(2, 3)
-    Out[]: 5
+But this feels like we're using the python interpreter as little more than a calculator; we are not writing useful code.  Indeed simply entering ``2 + 3`` in the interpreter provides the same result with a lot less typing.
+
 
 What use is Lambda?
 -------------------

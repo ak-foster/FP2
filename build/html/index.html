@@ -171,12 +171,12 @@
 <span class="go">&lt;function &lt;lambda&gt; at 0x104f61e18&gt;</span>
 </pre></div>
 </div>
-<p>You can’t call those, because they have no name.  For all intents and purposes they were defined, recognized by the python interpreter as valid, syntatically correct python code, and then discarded, never to be seen or used again.  You could use them immediately by passing arguments:</p>
-<p>Ipython:</p>
-<div class="highlight-ipython3"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[]:</span> <span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">Out</span><span class="p">[]:</span> <span class="mi">5</span>
+<p>You can’t call those, because they have no name.  For all intents and purposes the anonymous functions were defined, recognized by the python interpreter as valid, syntatically correct python code, and then discarded, never to be seen or used again.  You could, however, use the function immediately by calling it with its required arguments:</p>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">5</span>
 </pre></div>
 </div>
+<p>But this feels like we’re using the python interpreter as little more than a calculator; we are not writing useful code.  Indeed simply entering <code class="docutils literal"><span class="pre">2</span> <span class="pre">+</span> <span class="pre">3</span></code> in the interpreter provides the same result with a lot less typing.</p>
 <div class="section" id="what-use-is-lambda">
 <h4>What use is Lambda?<a class="headerlink" href="#what-use-is-lambda" title="Permalink to this headline">¶</a></h4>
 <p>According to Python’s creator, not much.</p>
