@@ -60,7 +60,7 @@
 <li><a class="reference internal" href="#activity">Activity</a><ul>
 <li><a class="reference internal" href="#comprehensions-and-lambdas">Comprehensions and Lambdas</a></li>
 <li><a class="reference internal" href="#iterators-iteratables">Iterators &amp; Iteratables</a></li>
-<li><a class="reference internal" href="#id9">Generators</a></li>
+<li><a class="reference internal" href="#id1">Generators</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#assignment">Assignment</a></li>
@@ -136,27 +136,26 @@
 <div class="section" id="lambda">
 <h3>Lambda<a class="headerlink" href="#lambda" title="Permalink to this headline">¶</a></h3>
 <p>The Lambda special form is Python’s syntax for creating an unnamed function, i.e., a function without a name.  This is its general form:</p>
-<dl class="docutils">
-<dt><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a></dt>
-<dd>lambda arguments: expression</dd>
-</dl>
-<p><a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
+<p>… code-block:: python</p>
+<blockquote>
+<div>lambda arguments: expression</div></blockquote>
 <p>For example, here is a lambda form which adds one to its argument:</p>
-<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
-</pre></div>
-</div>
+<p>… code-block:: python3</p>
+<blockquote>
+<div>lambda x: x + 1</div></blockquote>
 <p>Here is a lambda that adds its two arguments together:</p>
-<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-</pre></div>
-</div>
+<p>… code-block:: python3</p>
+<blockquote>
+<div>lambda x, y: x + y</div></blockquote>
 <p>Now, unlike most code snippets, if you were to type these examples into your favorite python interpreter by themselves they would not accomplish much.</p>
 <p>Ipython:</p>
-<div class="highlight-ipython3"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-<span class="gh">Out[1]: </span><span class="go">&lt;function __main__.&lt;lambda&gt;&gt;</span>
-</pre></div>
-</div>
+<p>… code-block:: ipython3</p>
+<blockquote>
+<div>In [1]: lambda x, y: x + y
+Out[1]: &lt;function __main__.&lt;lambda&gt;&gt;</div></blockquote>
 <p>The reference cpython interpreter:</p>
-<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<p>… code-block:: python3</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
 <span class="go">&lt;function &lt;lambda&gt; at 0x104f61e18&gt;</span>
 </pre></div>
 </div>
@@ -193,8 +192,8 @@
 <h3>Iterators &amp; Iteratables<a class="headerlink" href="#iterators-iteratables" title="Permalink to this headline">¶</a></h3>
 <p>Write an Iterable that</p>
 </div>
-<div class="section" id="id9">
-<h3>Generators<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3>Generators<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="assignment">
