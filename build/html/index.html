@@ -136,26 +136,25 @@
 <div class="section" id="lambda">
 <h3>Lambda<a class="headerlink" href="#lambda" title="Permalink to this headline">¶</a></h3>
 <p>The Lambda special form is Python’s syntax for creating an unnamed function, i.e., a function without a name.  This is its general form:</p>
-<p>… code-block:: python</p>
-<blockquote>
-<div>lambda arguments: expression</div></blockquote>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">lambda</span> <span class="n">arguments</span><span class="p">:</span> <span class="n">expression</span>
+</pre></div>
+</div>
 <p>For example, here is a lambda form which adds one to its argument:</p>
-<p>… code-block:: python3</p>
-<blockquote>
-<div>lambda x: x + 1</div></blockquote>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
 <p>Here is a lambda that adds its two arguments together:</p>
-<p>… code-block:: python3</p>
-<blockquote>
-<div>lambda x, y: x + y</div></blockquote>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</pre></div>
+</div>
 <p>Now, unlike most code snippets, if you were to type these examples into your favorite python interpreter by themselves they would not accomplish much.</p>
 <p>Ipython:</p>
-<p>… code-block:: ipython3</p>
-<blockquote>
-<div>In [1]: lambda x, y: x + y
-Out[1]: &lt;function __main__.&lt;lambda&gt;&gt;</div></blockquote>
+<div class="highlight-ipython3"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<span class="gh">Out[1]: </span><span class="go">&lt;function __main__.&lt;lambda&gt;&gt;</span>
+</pre></div>
+</div>
 <p>The reference cpython interpreter:</p>
-<p>… code-block:: python3</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
 <span class="go">&lt;function &lt;lambda&gt; at 0x104f61e18&gt;</span>
 </pre></div>
 </div>
