@@ -68,6 +68,7 @@ The Lambda special form is Python's syntax for creating an unnamed function, i.e
 
 ```
     lambda arguments: expression
+
 ```
 
 For example, here is a lambda form which adds one to its argument:
