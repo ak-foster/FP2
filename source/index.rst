@@ -743,8 +743,6 @@ Sum of the integers:
 
   0, 1, 3, 6, 10, 15 .....
 
-.. nextslide::
-
 Doubler:
   Each value is double the previous value:
 
