@@ -1,5 +1,6 @@
 #!/bin/sh
-git_branch=`git rev-parse --abbrev-ref HEAD`
+git_branch="$(git rev-parse --abbrev-ref HEAD)"
+echo $git_branch
 git checkout gh-pages
 rm -rf build/*
 git merge --commit --no-edit $git_branch
