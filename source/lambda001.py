@@ -29,3 +29,23 @@ lambda x: x + 2
 dir()
 dir(__main__)
 %history -f lambda001.py
+map(lambda x, y: x + y, (2, 3))
+(map(lambda x, y: x + y, (2, 3)))
+list(map(lambda x, y: x + y, (2, 3)))
+list(map(lambda x, y: x + y, *(2, 3)))
+list(map(lambda x, y: x + y, 2, 3))
+list(map(lambda x, y: x + y, [2, 3]))
+(lambda x: x + 1)(3)
+(add_two)(3)
+(lambda x, y: x + y)(2, 3)
+(lambda x, y: x + y)(3, 4)
+add_two?
+add_two??
+def add_two(x): return x + 2
+add_two??
+(add_two)(3)
+lambda x, y: x + y
+dir()
+(lambda x, y: x + y)(2, 3)
+%ls
+%history -f lambda001.py
