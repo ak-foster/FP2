@@ -24,11 +24,11 @@ Finally we look at generators, a powerful programming construct that are lazy by
 
 For the functional programming modules,  we recommend the text Functional Python Programming by Steven Lott
 
-Publisher: Packt Publishing
-Pub. Date: January 31, 2015
-Web ISBN-13: 978-1-78439-761-6
-Print ISBN-13: 978-1-78439-699-2
-http://bit.ly/2azI62S
+| Publisher: Packt Publishing
+| Pub. Date: January 31, 2015
+| Web ISBN-13: 978-1-78439-761-6
+| Print ISBN-13: 978-1-78439-699-2
+| http://bit.ly/2azI62S
 
 Each lesson's optional readings will draw from this text.
 
