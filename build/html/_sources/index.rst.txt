@@ -18,9 +18,9 @@ Introduction
 
 In this second lesson on functional programming we look at the lambda special form, which can be used in conjunction with `map` and `filter` and also in comprehensions.  We will consider the debates as to lambda's effectiveness by looking at its history and the comments of Python's creator Guido van Rossum.
 
-Where we had been avoiding the topic up until now, at long last we invistigate Iterators and iterables, a core construct in Python 3.  Both terms are sprinkled throughout the Python programming literature and the distinction between them can be subtle.
+Where we had been avoiding the topic up until now, at long last we investigate iterators and iterables, core constructs in Python 3.  Both terms are sprinkled throughout the Python programming literature and the distinction between them can be subtle.
 
-Finally we look at generators, a powerful programming construct that are lazy by nature (in the functional programming sence of lazy) and thus can produce infinite sequences without exhausting the resources of real-world computers.
+Finally we look at generators, a powerful programming construct that are lazy by nature (in the functional programming sense of lazy) and thus can produce infinite sequences without exhausting the resources of real-world computers.
 
 For the functional programming modules,  we recommend the text Functional Python Programming by Steven Lott
 
@@ -64,6 +64,8 @@ Required Reading
   https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators
 * What exactly are Python's iterator, iterable, and iteration protocols?
   https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols
+* Generators
+  https://wiki.python.org/moin/Generators
 
 
 Optional Reading
@@ -71,6 +73,9 @@ Optional Reading
 
 * Lott, S. (2015) Chapter 5. Higher-order Functions. Using Python lambda forms. In Functional Python Programming.
 * Lott, S. (2015) Chapter 3. Functions, Iterators, and Generators. In Functional Python Programming.
+* PEP 255 --- Simple Generators
+  https://www.python.org/dev/peps/pep-0255/
+
 
 
 *******
