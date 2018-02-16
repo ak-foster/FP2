@@ -24,7 +24,7 @@ Learning Objectives
 
 Upon successful completion of this lesson, you will be able to:
 
-* Use the lambda special form to define and anonymous function.
+* Use the lambda special form to define an anonymous function.
 *
 
 
