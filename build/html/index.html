@@ -79,13 +79,13 @@ Print ISBN-13: 978-1-78439-699-2
 <div class="section" id="required-reading">
 <h3>Required Reading<a class="headerlink" href="#required-reading" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>Small functions and the lambda expression</li>
+<li>Small functions and the lambda expression
+<a class="reference external" href="https://docs.python.org/dev/howto/functional.html?highlight=lambda#small-functions-and-the-lambda-expression">https://docs.python.org/dev/howto/functional.html?highlight=lambda#small-functions-and-the-lambda-expression</a></li>
+<li>Iterators
+<a class="reference external" href="https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators">https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators</a></li>
+<li>What exactly are Python’s iterator, iterable, and iteration protocols?
+<a class="reference external" href="https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols">https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols</a></li>
 </ul>
-<p><a class="reference external" href="https://docs.python.org/dev/howto/functional.html?highlight=lambda#small-functions-and-the-lambda-expression">https://docs.python.org/dev/howto/functional.html?highlight=lambda#small-functions-and-the-lambda-expression</a>
-* Iterators
-<a class="reference external" href="https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators">https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators</a>
-* What exactly are Python’s iterator, iterable, and iteration protocols?
-<a class="reference external" href="https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols">https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols</a></p>
 </div>
 <div class="section" id="optional-reading">
 <h3>Optional Reading<a class="headerlink" href="#optional-reading" title="Permalink to this headline">¶</a></h3>
@@ -513,48 +513,6 @@ the data in a class in multiple ways.</p>
 <p>Keep in mind – if all you need to do with the results is loop over it
 – use a generator expression rather than a list comprehension.</p>
 </div>
-<div class="section" id="other-uses-for-yield">
-<h4>Other uses for <code class="docutils literal"><span class="pre">yield</span></code><a class="headerlink" href="#other-uses-for-yield" title="Permalink to this headline">¶</a></h4>
-<p>The yield keyword and generator functions were designed with classic “generators” in mind.</p>
-<p>That is – objects that generate values on the fly.</p>
-<p>But, as we alluded to earlier, yield can be used for other things as well.</p>
-<p>Anytime you want to return a value, and then hold state until later,
-<code class="docutils literal"><span class="pre">yield</span></code> can be used.</p>
-<p><strong>Example:</strong> pytest fixtures:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<dl class="docutils">
-<dt>&#64;pytest.fixture</dt>
-<dd><dl class="first last docutils">
-<dt>def example_fixture(request):</dt>
-<dd># setup code here
-value = something()
-yield value  # provide the fixture value
-# do the teardown
-something_with(value)</dd>
-</dl>
-</dd>
-</dl>
-<p>In this case, the yield isn’t in any sort of loop or anything.
-It will only get run once. But the generator will maintain state,
-so the value can be used after the yield to do the teardown.</p>
-<p>How would this be done without yield? You’d need to store the value in a class:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">a_fixture</span><span class="p">():</span>
-
-    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># make it callable so it can provide the value</span>
-        <span class="c1"># setup code here</span>
-        <span class="n">value</span> <span class="o">=</span> <span class="n">something</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
-        <span class="k">return</span> <span class="n">value</span>
-
-    <span class="k">def</span> <span class="nf">teardown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">something_with</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Not horrible, but not as clean and simple.</p>
-</div>
 </div>
 </div>
 <div class="section" id="quiz">
@@ -678,7 +636,6 @@ so the value can be used after the yield to do the teardown.</p>
 <li><a class="reference internal" href="#generators">Generators</a><ul>
 <li><a class="reference internal" href="#yield">yield</a></li>
 <li><a class="reference internal" href="#generator-comprehensions">generator comprehensions</a></li>
-<li><a class="reference internal" href="#other-uses-for-yield">Other uses for <code class="docutils literal"><span class="pre">yield</span></code></a></li>
 </ul>
 </li>
 </ul>

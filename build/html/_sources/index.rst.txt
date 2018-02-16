@@ -59,11 +59,11 @@ Required Reading
 ================
 
 * Small functions and the lambda expression
-https://docs.python.org/dev/howto/functional.html?highlight=lambda#small-functions-and-the-lambda-expression
+  https://docs.python.org/dev/howto/functional.html?highlight=lambda#small-functions-and-the-lambda-expression
 * Iterators
-https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators
+  https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators
 * What exactly are Python's iterator, iterable, and iteration protocols?
-https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols
+  https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols
 
 
 Optional Reading
@@ -642,52 +642,6 @@ Note that `map` and `filter` produce iterators.
 
 Keep in mind -- if all you need to do with the results is loop over it
 -- use a generator expression rather than a list comprehension.
-
-Other uses for ``yield``
-------------------------
-
-The yield keyword and generator functions were designed with classic "generators" in mind.
-
-That is -- objects that generate values on the fly.
-
-But, as we alluded to earlier, yield can be used for other things as well.
-
-Anytime you want to return a value, and then hold state until later,
-``yield`` can be used.
-
-**Example:** pytest fixtures:
-
-.. code-block:: python
-
-@pytest.fixture
-    def example_fixture(request):
-        # setup code here
-        value = something()
-        yield value  # provide the fixture value
-        # do the teardown
-        something_with(value)
-
-In this case, the yield isn't in any sort of loop or anything.
-It will only get run once. But the generator will maintain state,
-so the value can be used after the yield to do the teardown.
-
-How would this be done without yield? You'd need to store the value in a class:
-
-.. code-block:: python
-
-    class a_fixture():
-
-        def __call__(self):
-            # make it callable so it can provide the value
-            # setup code here
-            value = something()
-            self.value = value
-            return value
-
-        def teardown(self):
-            something_with(self.value)
-
-Not horrible, but not as clean and simple.
 
 
 ****
