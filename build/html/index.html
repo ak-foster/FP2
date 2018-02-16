@@ -45,28 +45,47 @@
 </div>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>[1-3 paragraphs introducing topic(s)]</p>
+<p>In this second lesson on functional programming we look at the lambda special form, which can be used in conjunction with <cite>map</cite> and <cite>filter</cite> and also in comprehensions.  We will consider the debates as to lambda’s effectiveness by looking at its history and the comments of Python’s creator Guido van Rossum.</p>
+<p>Where we had been avoiding the topic up until now, at long last we invistigate Iterators and iterables, a core construct in Python 3.  Both terms are sprinkled throughout the Python programming literature and the distinction between them can be subtle.</p>
+<p>Finally we look at generators, a powerful programming construct that are lazy by nature (in the functional programming sence of lazy) and thus can produce infinite sequences without exhausting the resources of real-world computers.</p>
+<p>For the functional programming modules,  we recommend the text Functional Python Programming by Steven Lott</p>
+<p>Publisher: Packt Publishing
+Pub. Date: January 31, 2015
+Web ISBN-13: 978-1-78439-761-6
+Print ISBN-13: 978-1-78439-699-2
+<a class="reference external" href="http://bit.ly/2azI62S">http://bit.ly/2azI62S</a></p>
+<p>Each lesson’s optional readings will draw from this text.</p>
 <div class="section" id="learning-objectives">
 <h3>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h3>
 <p>Upon successful completion of this lesson, you will be able to:</p>
 <ul class="simple">
-<li>Use the lambda special form to define an anonymous function.</li>
-<li></li>
+<li>use the lambda special form to define an anonymous function.</li>
+<li>use lambda expressions with <cite>map</cite> and <cite>filter</cite> and in comprehensions.</li>
+<li>articulate the difference between an iterator and an iterable.</li>
+<li>use <cite>yield</cite> to create a generator.</li>
 </ul>
 </div>
 <div class="section" id="new-words-or-concepts">
 <h3>New Words or Concepts<a class="headerlink" href="#new-words-or-concepts" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>Comprehension</li>
 <li>Anonymous function</li>
 <li>Lambda</li>
 <li>Iterator</li>
 <li>iterable</li>
 <li>Generator</li>
+<li>yield</li>
 </ul>
 </div>
 <div class="section" id="required-reading">
 <h3>Required Reading<a class="headerlink" href="#required-reading" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Small functions and the lambda expression</li>
+</ul>
+<p><a class="reference external" href="https://docs.python.org/dev/howto/functional.html?highlight=lambda#small-functions-and-the-lambda-expression">https://docs.python.org/dev/howto/functional.html?highlight=lambda#small-functions-and-the-lambda-expression</a>
+* Iterators
+<a class="reference external" href="https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators">https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators</a>
+* What exactly are Python’s iterator, iterable, and iteration protocols?
+<a class="reference external" href="https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols">https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols</a></p>
 </div>
 <div class="section" id="optional-reading">
 <h3>Optional Reading<a class="headerlink" href="#optional-reading" title="Permalink to this headline">¶</a></h3>
@@ -78,9 +97,6 @@
 </div>
 <div class="section" id="content">
 <h2>Content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="comprehensions">
-<h3>Comprehensions<a class="headerlink" href="#comprehensions" title="Permalink to this headline">¶</a></h3>
-</div>
 <div class="section" id="lambda">
 <h3>Lambda<a class="headerlink" href="#lambda" title="Permalink to this headline">¶</a></h3>
 <p>The Lambda special form is Python’s syntax for creating an unnamed function — a function without a name.  This is its general form:</p>
@@ -641,7 +657,6 @@ so the value can be used after the yield to do the teardown.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#content">Content</a><ul>
-<li><a class="reference internal" href="#comprehensions">Comprehensions</a></li>
 <li><a class="reference internal" href="#lambda">Lambda</a><ul>
 <li><a class="reference internal" href="#what-use-is-lambda">What use is Lambda?</a></li>
 </ul>

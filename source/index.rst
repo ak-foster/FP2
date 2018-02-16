@@ -8,7 +8,7 @@ Functional Programming 2
 ========================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
 
@@ -16,7 +16,21 @@ Functional Programming 2
 Introduction
 ************
 
-[1-3 paragraphs introducing topic(s)]
+In this second lesson on functional programming we look at the lambda special form, which can be used in conjunction with `map` and `filter` and also in comprehensions.  We will consider the debates as to lambda's effectiveness by looking at its history and the comments of Python's creator Guido van Rossum.
+
+Where we had been avoiding the topic up until now, at long last we invistigate Iterators and iterables, a core construct in Python 3.  Both terms are sprinkled throughout the Python programming literature and the distinction between them can be subtle.
+
+Finally we look at generators, a powerful programming construct that are lazy by nature (in the functional programming sence of lazy) and thus can produce infinite sequences without exhausting the resources of real-world computers.
+
+For the functional programming modules,  we recommend the text Functional Python Programming by Steven Lott
+
+Publisher: Packt Publishing
+Pub. Date: January 31, 2015
+Web ISBN-13: 978-1-78439-761-6
+Print ISBN-13: 978-1-78439-699-2
+http://bit.ly/2azI62S
+
+Each lesson's optional readings will draw from this text.
 
 
 Learning Objectives
@@ -24,24 +38,32 @@ Learning Objectives
 
 Upon successful completion of this lesson, you will be able to:
 
-* Use the lambda special form to define an anonymous function.
-*
+* use the lambda special form to define an anonymous function.
+* use lambda expressions with `map` and `filter` and in comprehensions.
+* articulate the difference between an iterator and an iterable.
+* use `yield` to create a generator.
 
 
 New Words or Concepts
 =====================
 
-* Comprehension
 * Anonymous function
 * Lambda
 * Iterator
 * iterable
 * Generator
+* yield
 
 
 Required Reading
 ================
 
+* Small functions and the lambda expression
+https://docs.python.org/dev/howto/functional.html?highlight=lambda#small-functions-and-the-lambda-expression
+* Iterators
+https://docs.python.org/dev/howto/functional.html?highlight=iterator#iterators
+* What exactly are Python's iterator, iterable, and iteration protocols?
+https://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols
 
 
 Optional Reading
@@ -54,11 +76,6 @@ Optional Reading
 *******
 Content
 *******
-
-
-Comprehensions
-==============
-
 
 
 Lambda
@@ -671,7 +688,6 @@ How would this be done without yield? You'd need to store the value in a class:
             something_with(self.value)
 
 Not horrible, but not as clean and simple.
-
 
 
 ****
