@@ -287,8 +287,8 @@ How do you get the iterator object from an "iterable"?  The iter() function will
     Out[]: <tupleiterator at 0x101e01710>
 
 
-List as an Iterator:
---------------------
+List as an Iterator
+-------------------
 
 .. code-block:: ipython
 
@@ -390,8 +390,8 @@ A simple version of ``range()``
             else:
                 raise StopIteration
 
-What does ``for`` do?
-----------------------
+What does for do?
+-----------------
 
 Now that we know the iterator protocol, we can write something like a for loop:
 
