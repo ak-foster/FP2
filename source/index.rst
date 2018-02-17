@@ -456,7 +456,7 @@ Generators give you an iterator object with no access to the underlying data ...
 
 Conceptually iterators are about various ways to loop over data.  They can generate data on the fly.
 
-Practically you can use either an iterator or a generator --- and a generator a type of iterator.
+Practically you can use either an iterator or a generator --- and a generator is a type of iterator.
 
 Generators do some of the book-keeping for you and therefore involve simpler syntax.
 
