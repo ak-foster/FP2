@@ -201,10 +201,12 @@
 <p>Even worse: <code class="docutils literal"><span class="pre">dict.items()</span></code> created a full list of <code class="docutils literal"><span class="pre">(key,value)</span></code> tuples — a complete copy of all the data in the dict.  Even worse: <code class="docutils literal"><span class="pre">enumerate(dict.items())</span></code> created a whole list of
 <code class="docutils literal"><span class="pre">(index,</span> <span class="pre">(key,</span> <span class="pre">value))</span></code> tuples — lots of copies of everything.</p>
 <p>Python2 then introduced “iterable” versions of a number of functions and methods:</p>
-<p><code class="docutils literal"><span class="pre">itertools.izip</span></code>
-<code class="docutils literal"><span class="pre">dict.iteritems()</span></code>
-<code class="docutils literal"><span class="pre">dict.iterkeys()</span></code>
-<code class="docutils literal"><span class="pre">dict.itervalues()</span></code></p>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">itertools.izip</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">dict.iteritems()</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">dict.iterkeys()</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">dict.itervalues()</span></code></div>
+</div>
 <p>So you could now iterate through that stuff without copying anything.</p>
 </div>
 <div class="section" id="python3">
@@ -339,7 +341,7 @@
 <div class="section" id="what-does-for-do">
 <h4>What does for do?<a class="headerlink" href="#what-does-for-do" title="Permalink to this headline">¶</a></h4>
 <p>Now that we know the iterator protocol, we can write something like a for loop:</p>
-<p><code class="xref download docutils literal"><span class="pre">my_for.py</span></code></p>
+<p><a class="reference download internal" href="_downloads/my_for.py" download=""><code class="xref download docutils literal"><span class="pre">my_for.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_for</span><span class="p">(</span><span class="n">an_iterable</span><span class="p">,</span> <span class="n">func</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Emulation of a for loop.</span>
@@ -433,7 +435,7 @@ only returns the generator object.  The actual code in the function is run when 
 </pre></div>
 </div>
 <p>So a generator <strong>is</strong> an iterator.</p>
-<p><code class="xref download docutils literal"><span class="pre">yield_example.py</span></code></p>
+<p><a class="reference download internal" href="_downloads/yield_example.py" download=""><code class="xref download docutils literal"><span class="pre">yield_example.py</span></code></a></p>
 </div>
 <div class="section" id="generator-comprehensions">
 <h4>Generator Comprehensions<a class="headerlink" href="#generator-comprehensions" title="Permalink to this headline">¶</a></h4>
@@ -464,7 +466,7 @@ only returns the generator object.  The actual code in the function is run when 
 </div>
 <div class="section" id="iterators-iteratables">
 <h3>Iterators &amp; Iteratables<a class="headerlink" href="#iterators-iteratables" title="Permalink to this headline">¶</a></h3>
-<p><code class="xref download docutils literal"><span class="pre">iterator_1.py</span></code></p>
+<p><a class="reference download internal" href="_downloads/iterator_1.py" download=""><code class="xref download docutils literal"><span class="pre">iterator_1.py</span></code></a></p>
 <ul class="simple">
 <li>Extend (<code class="docutils literal"><span class="pre">iterator_1.py</span></code> ) to be more like <code class="docutils literal"><span class="pre">range()</span></code> – add three input parameters: <code class="docutils literal"><span class="pre">iterator_2(start,</span> <span class="pre">stop,</span> <span class="pre">step=1)</span></code></li>
 <li>What happens if you break from a loop and try to pick it up again:</li>
@@ -497,7 +499,7 @@ only returns the generator object.  The actual code in the function is run when 
 <li>Prime numbers</li>
 </ul>
 <p>Test code in:</p>
-<p><code class="xref download docutils literal"><span class="pre">test_generator.py</span></code></p>
+<p><a class="reference download internal" href="_downloads/test_generator.py" download=""><code class="xref download docutils literal"><span class="pre">test_generator.py</span></code></a></p>
 <p>Descriptions:</p>
 <dl class="docutils">
 <dt>Sum of the integers:</dt>

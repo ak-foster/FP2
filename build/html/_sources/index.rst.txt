@@ -222,10 +222,10 @@ Even worse: ``dict.items()`` created a full list of ``(key,value)`` tuples --- a
 
 Python2 then introduced "iterable" versions of a number of functions and methods:
 
-``itertools.izip``
-``dict.iteritems()``
-``dict.iterkeys()``
-``dict.itervalues()``
+| ``itertools.izip``
+| ``dict.iteritems()``
+| ``dict.iterkeys()``
+| ``dict.itervalues()``
 
 So you could now iterate through that stuff without copying anything.
 
