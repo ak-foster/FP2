@@ -190,8 +190,11 @@
 <p>Why drop lambda? Most Python users are unfamiliar with Lisp or Scheme, so the name is confusing; also, there is a widespread misunderstanding that lambda can do things that a nested function can’t – I still recall Laura Creighton’s Aha!-erlebnis after I showed her there was no difference! Even with a better name, I think having the two choices side-by-side just requires programmers to think about making a choice that’s irrelevant for their program; not having the choice streamlines the thought process. Also, once map(), filter() and reduce() are gone, there aren’t a whole lot of places where you really need to write very short local functions; Tkinter callbacks come to mind, but I find that more often than not the callbacks should be methods of some state-carrying object anyway (the exception being toy programs).</p>
 <p>Update: lambda, filter and map will stay (the latter two with small changes, returning iterators instead of lists). Only reduce will be removed from the 3.0 standard library. You can import it from functools. “</p>
 <blockquote>
-<div>– Guido van Rossum
-| <a class="reference external" href="http://www.artima.com/weblogs/viewpost.jsp?thread=98196">http://www.artima.com/weblogs/viewpost.jsp?thread=98196</a></div></blockquote>
+<div><div class="line-block">
+<div class="line">Guido van Rossum</div>
+<div class="line"><a class="reference external" href="http://www.artima.com/weblogs/viewpost.jsp?thread=98196">http://www.artima.com/weblogs/viewpost.jsp?thread=98196</a></div>
+</div>
+</div></blockquote>
 <p>Why would we teach the Lambda special form if even if Python’s creator has a low opinion of it?</p>
 <p>You need to understand it, because you are going to see it in the wild.</p>
 <p>As to whether you decide to propogate its use, we leave that to you.</p>
