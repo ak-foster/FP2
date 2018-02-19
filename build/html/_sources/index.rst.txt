@@ -187,7 +187,7 @@ Why drop lambda? Most Python users are unfamiliar with Lisp or Scheme, so the na
 Update: lambda, filter and map will stay (the latter two with small changes, returning iterators instead of lists). Only reduce will be removed from the 3.0 standard library. You can import it from functools. "
 
  -- Guido van Rossum
- -- http://www.artima.com/weblogs/viewpost.jsp?thread=98196
+ | http://www.artima.com/weblogs/viewpost.jsp?thread=98196
 
 Why would we teach the Lambda special form if even if Python's creator has a low opinion of it?
 
