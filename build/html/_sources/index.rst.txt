@@ -22,6 +22,9 @@ Where we had been avoiding the topic up until now, at long last we investigate i
 
 Finally we look at generators, powerful programming constructs that are lazy by nature (in the functional programming sense of lazy) and thus can produce infinite sequences without exhausting the resources of real-world computers.
 
+Recommended Text
+================
+
 For the functional programming modules,  we recommend the text Functional Python Programming by Steven Lott.
 
 | Publisher: Packt Publishing
