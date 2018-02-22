@@ -18,7 +18,7 @@ list(map(times_two, [x for x in range(10)]))
 # Now let's use a lamdda.
 list(map(lambda x: x*2, [x for x in range(10)]))
 
-# Let's look at this in a comprehension.null=True
+# Let's look at this in a comprehension.
 [x for x in range(10)]
 [times_two(x) for x in range(10)]
 
