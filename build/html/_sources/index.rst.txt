@@ -166,7 +166,7 @@ The reference cpython interpreter:
     >>> lambda x, y: x + y
     <function <lambda> at 0x104f61e18>
 
-You can't call those, because they have no name.  For all intents and purposes the anonymous functions were defined, recognized by the python interpreter as valid, syntatically correct python code, and then discarded, never to be seen or used again.  You could, however, use the function immediately by calling it with its required arguments:
+You can't call those, because they have no name.  For all intents and purposes the anonymous functions were defined, recognized by the python interpreter as valid, syntactically correct python code, and then discarded, never to be seen or used again.  You could, however, use the function immediately by calling it with its required arguments:
 
 .. code-block:: python3
 
@@ -175,7 +175,12 @@ You can't call those, because they have no name.  For all intents and purposes t
 
 In this case python defines the anonymous function, calls it with the supplied arguments and prints the result, but this feels like we're using the python interpreter as little more than a calculator; we are not writing useful code.  Indeed simply entering ``2 + 3`` in the interpreter provides the same result with a lot less typing.  So what's the point?  Where are lambdas useful?
 
-Lambdas are only useful within larger code constructs.
+Lambdas are only useful within larger code constructs --- specifically when defined inline --- and generally as an argument to a function or method which is expecting a function.
+
+What is so special about Lambda?
+--------------------------------
+
+Here is the secret about Lambda: there is no secret to lambda.  There is nothing it can do that a standard named function cannot do.  It has no special powers aside from its ability to be defined inline.  Wherever you can use a Lambda you could instead choose to use a standard named function.
 
 
 What use is Lambda?
@@ -196,7 +201,7 @@ Why would we teach the Lambda special form if even if Python's creator has a low
 
 You need to understand it, because you are going to see it in the wild.
 
-As to whether you decide to propogate its use, we leave that to you.
+As to whether you decide to propagate its use, we leave that to you.
 
 [Video]
 
@@ -635,7 +640,7 @@ Doubler:
   1, 2, 4, 8, 16, 32,
 
 Fibonacci sequence:
-  The fibonacci sequence as a generator:
+  The Fibonacci sequence as a generator:
 
   f(n) = f(n-1) + f(n-2)
 
@@ -682,7 +687,7 @@ Each value is double the previous value:
 Fibonacci sequence
 ------------------
 
-The fibonaccisequenc as a generator:
+The Fibonacci sequence as a generator:
 
 f(n) = f(n-1) + f(n-2)
 

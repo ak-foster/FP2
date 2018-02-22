@@ -179,13 +179,17 @@
 <span class="go">&lt;function &lt;lambda&gt; at 0x104f61e18&gt;</span>
 </pre></div>
 </div>
-<p>You can’t call those, because they have no name.  For all intents and purposes the anonymous functions were defined, recognized by the python interpreter as valid, syntatically correct python code, and then discarded, never to be seen or used again.  You could, however, use the function immediately by calling it with its required arguments:</p>
+<p>You can’t call those, because they have no name.  For all intents and purposes the anonymous functions were defined, recognized by the python interpreter as valid, syntactically correct python code, and then discarded, never to be seen or used again.  You could, however, use the function immediately by calling it with its required arguments:</p>
 <div class="highlight-python3"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="go">5</span>
 </pre></div>
 </div>
 <p>In this case python defines the anonymous function, calls it with the supplied arguments and prints the result, but this feels like we’re using the python interpreter as little more than a calculator; we are not writing useful code.  Indeed simply entering <code class="docutils literal"><span class="pre">2</span> <span class="pre">+</span> <span class="pre">3</span></code> in the interpreter provides the same result with a lot less typing.  So what’s the point?  Where are lambdas useful?</p>
-<p>Lambdas are only useful within larger code constructs.</p>
+<p>Lambdas are only useful within larger code constructs — specifically when defined inline — and generally as an argument to a function or method which is expecting a function.</p>
+<div class="section" id="what-is-so-special-about-lambda">
+<h4>What is so special about Lambda?<a class="headerlink" href="#what-is-so-special-about-lambda" title="Permalink to this headline">¶</a></h4>
+<p>Here is the secret about Lambda: there is no secret to lambda.  There is nothing it can do that a standard named function cannot do.  It has no special powers aside from its ability to be defined inline.  Wherever you can use a Lambda you could instead choose to use a standard named function.</p>
+</div>
 <div class="section" id="what-use-is-lambda">
 <h4>What use is Lambda?<a class="headerlink" href="#what-use-is-lambda" title="Permalink to this headline">¶</a></h4>
 <p>According to Python’s creator, not much.</p>
@@ -200,7 +204,7 @@
 </div></blockquote>
 <p>Why would we teach the Lambda special form if even if Python’s creator has a low opinion of it?</p>
 <p>You need to understand it, because you are going to see it in the wild.</p>
-<p>As to whether you decide to propogate its use, we leave that to you.</p>
+<p>As to whether you decide to propagate its use, we leave that to you.</p>
 <p>[Video]</p>
 </div>
 </div>
@@ -545,7 +549,7 @@ only returns the generator object.  The actual code in the function is run when 
 <p class="last">1, 2, 4, 8, 16, 32,</p>
 </dd>
 <dt>Fibonacci sequence:</dt>
-<dd><p class="first">The fibonacci sequence as a generator:</p>
+<dd><p class="first">The Fibonacci sequence as a generator:</p>
 <p>f(n) = f(n-1) + f(n-2)</p>
 <p class="last">1, 1, 2, 3, 5, 8, 13, 21, 34…</p>
 </dd>
@@ -578,7 +582,7 @@ only returns the generator object.  The actual code in the function is run when 
 </div>
 <div class="section" id="fibonacci-sequence">
 <h4>Fibonacci sequence<a class="headerlink" href="#fibonacci-sequence" title="Permalink to this headline">¶</a></h4>
-<p>The fibonaccisequenc as a generator:</p>
+<p>The Fibonacci sequence as a generator:</p>
 <p>f(n) = f(n-1) + f(n-2)</p>
 <p>1, 1, 2, 3, 5, 8, 13, 21, 34…</p>
 </div>
@@ -622,6 +626,7 @@ only returns the generator object.  The actual code in the function is run when 
 </li>
 <li><a class="reference internal" href="#content">Content</a><ul>
 <li><a class="reference internal" href="#lambda">Lambda</a><ul>
+<li><a class="reference internal" href="#what-is-so-special-about-lambda">What is so special about Lambda?</a></li>
 <li><a class="reference internal" href="#what-use-is-lambda">What use is Lambda?</a></li>
 </ul>
 </li>
