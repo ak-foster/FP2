@@ -571,6 +571,23 @@ Keep in mind --- if all you need to do with the results is loop over it -- use a
 Quiz
 ****
 
+1. Lambda can do things that standard, named functions cannot.
+
+   | True
+   | False
+
+2.
+
+4. Generators can pick up from where they left off by using this special keyword.
+
+   | return
+   | yield
+
+5. Generators can create infinite series without using infinite computer memory.
+
+   | True
+   | False
+
 
 
 ********
