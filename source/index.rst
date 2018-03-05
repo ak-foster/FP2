@@ -92,6 +92,8 @@ Optional Reading
 
 * Lott, S. (2015) Chapter 3. Functions, Iterators, and Generators. In Functional Python Programming.
 
+* Ramalho, L (2015) Chapter 14: Iterables, Iterators, and Generators. In Fluent Python
+
 * The Iterator Protocol: How For Loops Work in Python
 
   | http://treyhunner.com/2016/12/python-iterator-protocol-how-for-loops-work/
