@@ -179,6 +179,9 @@ In this case python defines the anonymous function, calls it with the supplied a
 
 Lambdas are only useful within larger code constructs --- specifically when defined inline --- and generally as an argument to a function or method which is expecting a function.
 
+[Video: Lambda]
+
+
 What is so special about Lambda?
 --------------------------------
 
@@ -204,8 +207,6 @@ Why would we teach the Lambda special form if even if Python's creator has a low
 You need to understand it, because you are going to see it in the wild.
 
 As to whether you decide to propagate its use, we leave that to you.
-
-[Video]
 
 
 Iterators and Iterables
@@ -234,16 +235,14 @@ In python2 those are all sequences.  It turns out, however, that the most common
 
 So fairly early in Python2, Python introduced the idea of the "iterable".  An iterable is something you can, well, iterate over in a for loop, but often does not keep the whole sequence in memory at once.  After all, why make a copy of something just to look at all its items?
 
-Example:
-
-In python2: ``dict.keys()`` returns a list of all the keys in the dict.  But why make a full copy of all the keys, when all you want to do is:
+For example, in python2: ``dict.keys()`` returns a list of all the keys in the dict.  But why make a full copy of all the keys, when all you want to do is:
 
 .. code-block:: python
 
-    for k in dict.keys():
-        do_something_with(k)
+    for key in dict.keys():
+        do_something_with(key)
 
-Even worse: ``dict.items()`` created a full list of ``(key,value)`` tuples --- a complete copy of all the data in the dict.  Even worse: ``enumerate(dict.items())`` created a whole list of
+Even worse ``dict.items()`` created a full list of ``(key,value)`` tuples --- a complete copy of all the data in the dict.  Yet worse ``enumerate(dict.items())`` created a whole list of
 ``(index, (key, value))`` tuples --- lots of copies of everything.
 
 Python2 then introduced "iterable" versions of a number of functions and methods:
@@ -360,7 +359,7 @@ It works, and is fairly efficient, but what about:
 
     for triple in zip(words[:-2], words[1:-1], words[2:-2]):
 
-zip() returns an iterable --- it does not build up the whole list, so this is quite efficient.  However, we are still slicing: ([1:]), which produces a copy --- so we are creating three copies of the list --- not so good if memory is tight.  Note that they are shallow copies, so not nonetheless this is not terribly bad.  Nevertheless, we can do better.
+zip() returns an iterable --- it does not build up the whole list, so this is quite efficient.  However, we are still slicing: ([1:]), which produces a copy --- so we are creating three copies of the list --- not so good if memory is tight.  Note that they are shallow copies, so this is not terribly bad.  Nevertheless, we can do better.
 
 The ``itertools`` module has a ``islice()`` (iterable slice) function.  It returns an iterator over a slice of a sequence --- so no more copies:
 
@@ -457,8 +456,8 @@ method that returns an iterator and/or has a ``__getitem__`` method that takes 0
 
 An "iterator" is anything that conforms to the "iterator protocol":
 
- * Has a ``__next__()`` method that returns bjects.
- * Raises ``StopIteration`` when their are no more bjects to be returned.
+ * Has a ``__next__()`` method that returns objects.
+ * Raises ``StopIteration`` when their are no more objects to be returned.
  * Has a ``__iter__()`` method that returns an iterator --- usually itself.
 
 Lots of common iterators are different types:
@@ -576,9 +575,17 @@ Quiz
    | True
    | False
 
-2.
+2. Iterators and generators are more memory efficient than instantiated sequences such as lists.
 
-4. Generators can pick up from where they left off by using this special keyword.
+   | True
+   | False
+
+3. Iterators and generators raise the StopIteration exception when they have no more values to emit.
+
+   | True
+   | False
+
+4. Between subsequent calls generators pick up from where they left off by using this special keyword.
 
    | return
    | yield
