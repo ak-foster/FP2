@@ -146,7 +146,7 @@ This simple function does nothing more than return the value of the expression i
 
     def my_sum(x, y): return x + y
 
-Notice how this named function maps directly to its unnamed, lambda equivilent:
+Notice how this named function maps directly to its unnamed, lambda equivalent:
 
 .. code-block:: python3
 
@@ -563,7 +563,7 @@ Note that ``map`` and ``filter`` produce iterators.
 
 Keep in mind --- if all you need to do with the results is loop over it -- use a generator expression rather than a list comprehension.
 
-[Video]
+[Video: Generators]
 
 
 ****
@@ -685,8 +685,8 @@ Others to try:
 Assignment
 **********
 
-Generator LAB
-=============
+Generators
+==========
 
 Write some generators:
 
