@@ -121,7 +121,7 @@ The Lambda special form is Python's syntax for creating an unnamed function --- 
 
     lambda arguments: expression
 
-The function evaluates to the result of the expression.  Here is a lambda form that adds one to its argument:
+The function evaluates to the result of the expression.  Here is a lambda that adds one to its argument:
 
 .. code-block:: python3
 
@@ -496,7 +496,7 @@ The ``yield`` keyword is a way to make a quickie generator with a function:
         some_stuff
         yield something
 
-Generator functions "yield" a value, rather than returning a value.  It *does* 'return' a value, but rather than ending execution of the function it preserves function state so that it can pick up where it left off.  In other words, state is preserved in between yields.
+Generator functions "yield" a value, rather than returning a value.  It *does* 'return' a value, but rather than ending execution of the function it preserves function state so that it can pick up where it left off.  In other words, state is preserved between yields.
 
 A function with ``yield``  in it is a factory for a generator.  Each time you call it, you get a new generator:
 
@@ -597,9 +597,9 @@ Quiz
 
 
 
-********
-Activity
-********
+*********************
+Activity & Assignment
+*********************
 
 
 
