@@ -611,7 +611,7 @@ Functional programming thrives in this environment.  First we'll need to find a 
 
 Let's say we like music that you can dance too, but that isn't too loud.  Tricky to come by, perhaps.  Nonetheless, let's see what we can find.
 
-For this research we are going to use a library that has become a cornerstone in Python's analytics stack, Pandas.  It is a powerful library, but we only need touch only a few of its features to get started.  First, install Pandas into your virtualenvironment.
+For this research we are going to use a library that has become a cornerstone in Python's analytics stack, Pandas.  It is a powerful library, but we need touch only a few of its features to get started.  First, install Pandas into your virtualenvironment.
 
 .. code-block:: bash
 
