@@ -602,9 +602,45 @@ Activity & Assignment
 *********************
 
 
-
 Comprehensions and Lambdas
 ==========================
+
+Ever since the anthem rockers started sweeping the Grammy Awards (circa 2013) popular music has been a frightening place for many of us.  Thus, each year, after the hoopla has died down, some of us cautiously venture out looking for new music.  The trouble is that actually listening to any of it could cause irreparable damage.  What are we to do?
+
+Functional programming thrives in this environment.  First we'll need to find a dataset of current, popular music.  Then we'll need to analyze it.  Data sets of these types can be enormous; many times the size of the drives in professional-grade laptops.  Let's use Spotify's top 100 tracks from 2017 to get started.
+
+Let's say we like music that you can dance too, but that isn't too loud.  Tricky to come by, perhaps.  Nonetheless, let's see what we can find.
+
+For this research we are going to use a library that has become a cornerstone in Python's analytics stack, Pandas.  It is a powerful library, but we only need touch only a few of its features to get started.  First, install Pandas into your virtualenvironment.
+
+.. code-block:: bash
+
+    $ pip install pandas
+
+Bring up an interpreter and load the data.
+
+.. code-block:: python3
+
+    music = pd.read_csv("featuresdf.csv")
+
+Take a look around to get a sense of the general shape of the data.
+
+.. code-block:: python3
+
+    music.head()
+    music.describe()
+
+Now we are ready for the analytics.  This first one is a gimme.  We will use a comprehension to get danceability scores over 0.8.
+
+.. code-block:: python3
+
+    [x for x in music.danceability if x > 0.8]
+
+Your job, now, is to get artists and song names for for tracks with danceability scores over 0.8 and loudness scores below -5.0.  In other words, quiet yet danceable tracks.  Also, these tracks should be sorted in descending order by danceability so that the most danceable tracks are up top.  You should be able to work your way there starting with the comprehension above.  And while you could use Pandas features along the way, you don't need to.  To accomplish the objective you do not need to know anything more about Pandas than what you can infer from the material herein.  Standard library functions that could come in handy include zip() and sorted().
+
+Submit your code and the top five tracks to complete the assignment.
+
+Then, put on your dancing shoes, get out to Spotify or Youtube, and let's get this party started.  Also, stay safe.  It's a scary pop world out there.
 
 
 Iterators & Iteratables
