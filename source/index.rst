@@ -602,8 +602,8 @@ Activity & Assignment
 *********************
 
 
-Comprehensions and Lambdas
-==========================
+Comprehensions
+==============
 
 Ever since the anthem rockers started sweeping the Grammy Awards (circa 2013) popular music has been a frightening place for many of us.  Thus, each year, after the hoopla has died down, some of us cautiously venture out looking for new music.  The trouble is that actually listening to any of it could cause irreparable damage.  What are we to do?
 
@@ -640,7 +640,7 @@ Your job, now, is to get artists and song names for for tracks with danceability
 
 Submit your code and the top five tracks to complete the assignment.
 
-Then, put on your dancing shoes, get out to Spotify or Youtube, and let's get this party started.  Also, stay safe.  It's a scary pop world out there.
+Then, put on your dancing shoes, get out to Spotify or Youtube, and let's get this party started.  Stay safe.  It's a scary pop world out there.
 
 
 Iterators & Iteratables
