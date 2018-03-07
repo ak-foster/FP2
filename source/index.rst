@@ -621,6 +621,7 @@ Bring up an interpreter and load the data.
 
 .. code-block:: python3
 
+    import pandas as pd
     music = pd.read_csv("featuresdf.csv")
 
 Take a look around to get a sense of the general shape of the data.
