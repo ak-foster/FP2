@@ -759,7 +759,7 @@ f(n) = f(n-1) + f(n-2)
 Prime numbers
 -------------
 
-Generate the prime numbers (numbers only divisible by them self and 1):
+Generate the prime numbers (numbers only divisible by themselves and one):
 
 2, 3, 5, 7, 11, 13, 17, 19, 23...
 
